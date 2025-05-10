@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Flux Client
 // @namespace    none
-// @version      v1
+// @version      1.0
 // @description  A lightweight, customizable Tampermonkey script designed to enhance the user experience in browser-based applications or games. It provides modular functionality with user-controlled toggles for key features such as aimbot, ESP, custom crosshair, and anti-AFK. Each feature is integrated through keyboard shortcuts for fast activation, and the script maintains a clean interface while offering power-user utilities.
 // @author       barryjensen-dev
 // @match        *://*/*
@@ -23,6 +23,8 @@
 // @exclude      *://github.com/*
 // @exclude      *://www.github.com/*
 // @exclude      *://*.github.dev/*
+// @exclude      *://roblox.com/*
+// @exclude      *://www.roblox.com*
 // @exclude      *://github-api.arkoselabs.com/*
 // @exclude      *://*.google.com/recaptcha/*
 // @exclude      *://www.google.com/recaptcha/*
@@ -39,8 +41,8 @@
 // @exclude      *://hcaptcha.com/*
 // @icon         https://i.ibb.co/YBGBXPFj/icon.png
 // @grant        none
-// @downloadURL  https://github.com/barryjensen-dev/fluxclient/raw/refs/heads/main/flux.user.js
-// @updateURL    https://github.com/barryjensen-dev/fluxclient/raw/refs/heads/main/flux.user.js
+// @downloadURL  https://github.com/barryjensen-dev/fluxclient/raw/refs/heads/main/flux-client.user.js
+// @updateURL    https://github.com/barryjensen-dev/fluxclient/raw/refs/heads/main/flux-client.user.js
 // ==/UserScript==
 
 (function() {
