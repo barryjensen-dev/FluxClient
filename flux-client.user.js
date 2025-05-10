@@ -25,6 +25,9 @@
 // @exclude      *://*.github.dev/*
 // @exclude      *://roblox.com/*
 // @exclude      *://www.roblox.com*
+// @exclude      *://greasyfork.org/*
+// @exclude      *://www.greasyfork.org/*
+// @exclude      *://*.google.com/*
 // @exclude      *://github-api.arkoselabs.com/*
 // @exclude      *://*.google.com/recaptcha/*
 // @exclude      *://www.google.com/recaptcha/*
@@ -352,7 +355,7 @@
                         <div class="flux-about-info">
                             <p class="credits" style="font-size: 1.2em; color: var(--flux-accent);">Flux Client</p>
                             <p class="version">Version: V12</p>
-                            <p>Developed by <span style="color: var(--flux-text-bright); font-weight:bold;">Kona</span> and <span style="color: var(--flux-text-bright); font-weight:bold;">Bozzz</span></p>
+                            <p>Developed by <span style="color: var(--flux-text-bright); font-weight:bold;">barryjensen-dev</span></p>
                         </div>
                     </div>
                     <div class="flux-card">
