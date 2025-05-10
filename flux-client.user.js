@@ -266,7 +266,7 @@
             <div id="flux-key-title">Flux Client</div>
             <div id="flux-key-subtitle">Enter your access key to continue</div>
             <input type="password" id="flux-key-input" placeholder="••••••••••">
-            <button id="flux-key-button">Unlock</button>
+            <button id="flux-key-button">Login</button>
             <div id="flux-key-error"></div>
         </div>
     `;
