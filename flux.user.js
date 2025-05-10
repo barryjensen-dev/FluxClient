@@ -39,8 +39,8 @@
 // @exclude      *://hcaptcha.com/*
 // @icon         https://i.ibb.co/YBGBXPFj/icon.png
 // @grant        none
-// @downloadURL  https://github.com/barryjensen-dev/FluxClient/flux.js
-// @updateURL    https://raw.githubusercontent.com/barryjensen-dev/FluxClient/main/flux.js
+// @downloadURL  https://github.com/barryjensen-dev/FluxClient/raw/refs/heads/main/flux.user.js
+// @updateURL    https://github.com/barryjensen-dev/FluxClient/raw/refs/heads/main/flux.user.js
 // ==/UserScript==
 
 (function() {
