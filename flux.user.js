@@ -42,10 +42,10 @@
 // @exclude      *://*.cloudflarechallenge.com/*
 // @exclude      *://*.hcaptcha.com/*
 // @exclude      *://hcaptcha.com/*
-// @icon         https://i.ibb.co/YBGBXPFj/icon.png
+// @icon         https://raw.githubusercontent.com/barryjensen-dev/fluxclient/refs/heads/main/icons/icon.png
 // @grant        none
-// @downloadURL  https://github.com/barryjensen-dev/fluxclient/raw/refs/heads/main/flux-client.user.js
-// @updateURL    https://github.com/barryjensen-dev/fluxclient/raw/refs/heads/main/flux-client.user.js
+// @downloadURL  https://github.com/barryjensen-dev/fluxclient/raw/refs/heads/main/flux.user.js
+// @updateURL    https://github.com/barryjensen-dev/fluxclient/raw/refs/heads/main/flux.user.js
 // ==/UserScript==
 
 (function() {
