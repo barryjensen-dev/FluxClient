@@ -1,6 +1,6 @@
 {
   "name": "fluxclient",
-  "version": "14.1.0",
+  "version": "15.0",
   "description": "Flux Client",
   "main": "flux.user.js",
   "scripts": {
