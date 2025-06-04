@@ -101,7 +101,7 @@
     }
 
     const FLUX_CLIENT_ID = 'flux-client-container';
-    const REQUIRED_KEY = 'UPDATE';
+    const REQUIRED_KEY = ['RELEASE', 'UPDATE', 'FLUX'];
 
     // Variables for new Function scope
     let autoclickIntervalId = null;
@@ -345,7 +345,7 @@
             <div id="flux-key-title">Flux Client Access</div>
             <div id="flux-key-instruction">Please verify your access by pasting the provided key below.</div>
             <div id="flux-key-display-container">
-                <code id="flux-displayed-key">${REQUIRED_KEY}</code>
+                <code id="flux-displayed-key">Accepted Keys: RELESE, UPDATE, FLUX</code>
                 <button id="flux-copy-key-button" title="Copy Key"></button> <!-- Using a clipboard icon -->
             </div>
             <input type="password" id="flux-key-input" placeholder="Enter Key Here">
@@ -432,8 +432,8 @@
                         <div class="flux-about-info">
                             <p class="credits" style="font-size: 1.2em; color: var(--flux-accent);">Flux Client</p>
                             <p class="version">Version: V15.1</p> <!-- Increment version -->
-                            <p>Developed by <span style="color: var(--flux-text-bright); font-weight:bold;">barryjensen-dev</span></p>
-                            <p>Updated <span style="color: var(--flux-text-bright); font-weight:bold;">2025/06/04</span></p>
+                            <p>Developed by: <span style="color: var(--flux-text-bright); font-weight:bold;">barryjensen-dev</span></p>
+                            <p>Updated <span style="color: var(--flux-text-bright); font-weight:bold;">June 4, 2025</span></p>
                         </div>
                     </div>
                     <div class="flux-card">
@@ -453,7 +453,7 @@
 
     const scriptParts = [
         `const FLUX_CLIENT_ID = '${FLUX_CLIENT_ID}';`,
-        `const REQUIRED_KEY = '${REQUIRED_KEY}';`,
+        `const REQUIRED_KEYS = ['RELEASE', 'UPDATE', 'FLUX'];`, 
         "let autoclickIntervalId = null; let isAutoclicking = false; let lastMouseX = 0; let lastMouseY = 0;",
         "let autoclickerKeydownListener = null; let mouseMoveListenerGlobal = null;",
         "let matrixIntervalId = null; let matrixCanvas = null; let matrixCtx = null;",
@@ -475,7 +475,7 @@
         "const displayedKeyElement = document.getElementById('flux-displayed-key');",
         "const copyKeyButtonElement = document.getElementById('flux-copy-key-button');",
         "if (copyKeyButtonElement && displayedKeyElement) { copyKeyButtonElement.onclick = () => { try { navigator.clipboard.writeText(displayedKeyElement.textContent).then(() => { copyKeyButtonElement.textContent = '✓'; setTimeout(() => { copyKeyButtonElement.innerHTML = ''; }, 1500); }).catch(err => console.error('FluxClient: Failed to copy key: ', err)); } catch (e) { console.error('FluxClient: Clipboard API not available or failed.', e); } }; }",
-        "const handleUnlockAttempt = () => { if (keyInputElement.value === REQUIRED_KEY) { keyErrorElement.classList.remove('flux-visible'); keyScreenElement.classList.add('flux-hidden'); setTimeout(() => { if (keyScreenElement && keyScreenElement.parentNode) keyScreenElement.remove(); clientContainer.appendChild(parseHTML(mainMenuHTMLString)); const mainInterface = document.getElementById('flux-main-interface'); if (!mainInterface) { console.error('FluxClient CRITICAL: #flux-main-interface NOT FOUND in DOM after append. HTML structure likely broken or parseHTML failed.'); if(typeof alert === 'function') alert('FluxClient Error: Failed to load main interface. Check console for details.'); return; } mainInterface.classList.add('flux-visible'); try { initializeMainMenu(); } catch (e) { console.error('FluxClient Error during initializeMainMenu:', e); if(typeof alert === 'function') alert('FluxClient Warning: Main interface loaded but initialization failed. Some features might not work. Error: ' + e.message); } }, 250); } else { keyInputElement.classList.add('flux-shake'); keyErrorElement.textContent = 'Incorrect Key. Access Denied.'; keyErrorElement.classList.add('flux-visible'); keyInputElement.value = ''; setTimeout(() => { keyInputElement.classList.remove('flux-shake'); }, 500); } };",
+        "const handleUnlockAttempt = () => { if (REQUIRED_KEYS.includes(keyInputElement.value)) { keyErrorElement.classList.remove('flux-visible'); keyScreenElement.classList.add('flux-hidden'); setTimeout(() => { if (keyScreenElement && keyScreenElement.parentNode) keyScreenElement.remove(); clientContainer.appendChild(parseHTML(mainMenuHTMLString)); const mainInterface = document.getElementById('flux-main-interface'); if (!mainInterface) { console.error('FluxClient CRITICAL: #flux-main-interface NOT FOUND in DOM after append. HTML structure likely broken or parseHTML failed.'); if(typeof alert === 'function') alert('FluxClient Error: Failed to load main interface. Check console for details.'); return; } mainInterface.classList.add('flux-visible'); try { initializeMainMenu(); } catch (e) { console.error('FluxClient Error during initializeMainMenu:', e); if(typeof alert === 'function') alert('FluxClient Warning: Main interface loaded but initialization failed. Some features might not work. Error: ' + e.message); } }, 250); } else { keyInputElement.classList.add('flux-shake'); keyErrorElement.textContent = 'Incorrect Key. Access Denied.'; keyErrorElement.classList.add('flux-visible'); keyInputElement.value = ''; setTimeout(() => { keyInputElement.classList.remove('flux-shake'); }, 500); } };",
         "keyButtonElement.onclick = handleUnlockAttempt;",
         "keyInputElement.onkeypress = function(e) { if (e.key === 'Enter') { handleUnlockAttempt(); } else { keyErrorElement.classList.remove('flux-visible'); } };",
 
