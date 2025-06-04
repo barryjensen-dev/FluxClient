@@ -46,8 +46,7 @@ A lightweight, customizable script designed to enhance the user experience in br
 ## Installation
 
 1. Install a userscript manager (Tampermonkey, Greasemonkey, etc.) in your browser.
-2. Create a new userscript and paste in the Flux Client code.
-3. Save and enable the script.  
+2. Go to [flux.user.js](flux.user.js) and click on raw to install the usersceipt with your chosen userscript manager.
 
 ---
 
@@ -55,7 +54,7 @@ A lightweight, customizable script designed to enhance the user experience in br
 
 1. Navigate to any supported website (you’ll see a small “Flux” icon in Tampermonkey’s toolbar).  
 2. Click the icon or press your userscript manager’s “run” shortcut.  
-3. When prompted, enter the key `UPDATE` and click **Verify & Enter**.  
+3. When prompted, enter the any of the keys listed and click **Verify & Enter**.  
 4. The Flux Client panel will slide in. Use the sidebar or keyboard shortcuts to navigate:  
    - **Proxy**: enter a URL, click **Go**.  
    - **Mods**: toggle Dark/Light, Inspect Page, Hard Reset, or Destroy Page.  
@@ -74,4 +73,4 @@ See [CHANGELOG](CHANGELOG) for a full history of updates and version details.
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.  
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
