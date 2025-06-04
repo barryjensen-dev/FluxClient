@@ -45,10 +45,9 @@ A lightweight, customizable script designed to enhance the user experience in br
 
 ## Installation
 
-1. Install a userscript manager (Tampermonkey, Greasemonkey, etc.) in your browser.  
-2. Create a new userscript and paste in the Flux Client code.  
-3. Make sure to include the `@exclude` rules for domains where you don’t want it to run (e.g., Google, GitHub, Apple, Roblox, major captcha providers).  
-4. Save and enable the script.  
+1. Install a userscript manager (Tampermonkey, Greasemonkey, etc.) in your browser.
+2. Create a new userscript and paste in the Flux Client code.
+3. Save and enable the script.  
 
 ---
 
