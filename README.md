@@ -46,21 +46,22 @@ A lightweight, customizable script designed to enhance the user experience in br
 ## Installation
 
 1. Install a userscript manager (Tampermonkey, Greasemonkey, etc.) in your browser.
-2. Go to [flux.user.js](flux.user.js) and click on raw to install the usersceipt with your chosen userscript manager.
+2. Create a new userscript and paste in the Flux Client code.
+3. Save and enable the script.  
 
 ---
 
 ## Usage
 
-1. Navigate to any supported website (you’ll see a small “Flux” icon in Tampermonkey’s toolbar).  
-2. Click the icon or press your userscript manager’s “run” shortcut.  
-3. When prompted, enter the any of the keys listed and click **Verify & Enter**.  
-4. The Flux Client panel will slide in. Use the sidebar or keyboard shortcuts to navigate:  
-   - **Proxy**: enter a URL, click **Go**.  
-   - **Mods**: toggle Dark/Light, Inspect Page, Hard Reset, or Destroy Page.  
-   - **Fun**: enable Matrix effect, autoclicker (stop with `` ` ``), or 100-tab spam.  
-   - **Script**: write or load JS and click **Execute**.  
-   - **Settings**: change appearance, reset, or view version info.  
+1. Navigate to any supported website (you’ll see a small “Flux” icon in Tampermonkey’s toolbar).
+2. Click the icon or press your userscript manager’s “run” shortcut.
+3. When prompted, enter your chosen key from the provided keys and click **Verify & Enter**.
+4. The Flux Client panel will slide in. Use the sidebar or keyboard shortcuts to navigate:
+   - **Proxy**: enter a URL, click **Go**.
+   - **Mods**: toggle Dark/Light, Inspect Page, Hard Reset, or Destroy Page.
+   - **Fun**: enable Matrix effect, autoclicker (stop with `` ` ``), or 100-tab spam.
+   - **Script**: write or load JS and click **Execute**.
+   - **Settings**: change appearance, reset, or view version info.
 5. To close Flux Client at any time, click the ✕ icon (or toggle **Reset Menu** in Settings).
 
 ---
