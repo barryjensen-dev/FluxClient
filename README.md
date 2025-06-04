@@ -46,8 +46,7 @@ A lightweight, customizable script designed to enhance the user experience in br
 ## Installation
 
 1. Install a userscript manager (Tampermonkey, Greasemonkey, etc.) in your browser.
-2. Create a new userscript and paste in the Flux Client code.
-3. Save and enable the script.  
+2. Open [flux.user.js][flux.user.js) and click on Raw and then click on install to add it to your chosen userscript manager.
 
 ---
 
