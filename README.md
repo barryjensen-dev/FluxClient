@@ -7,7 +7,7 @@ A lightweight, customizable script designed to enhance the user experience in br
 ## Features
 
 - **Access / Key Screen**  
-  - Requires the key `UPDATE` before showing the main panel.  
+  - Requires the correct keys before showing the main panel.  
   - Prevents accidental or unauthorized activation.  
 - **Draggable, Resizable Interface**  
   - Fixed‐position panel (≈520 × min-height 45 px) in the top-left corner, offset by 50 px.  
