@@ -1,6 +1,6 @@
 # Flux Client
 
-A lightweight, customizable script designed to enhance the user experience in browser-based applications. It provides modular functionality with user-controlled toggles. Each feature is integrated through keyboard shortcuts for fast activation, and the script maintains a clean interface while offering power-user utilities.
+A modular, in-page control panel that can be toggled on any website (with a few excluded domains). It unlocks a variety of utilities, “mods,” fun effects, and scripting tools—all accessible through an animated, draggable interface. A small access screen requiring the key `UPDATE` precedes the full menu. Once unlocked, the main interface appears with smooth fade-and-scale animations, a customizable color scheme, and a collapsible sidebar for navigating between sections.
 
 ## Changelog
 To see when the project was updated go to the [CHANGELOG](CHANGELOG) file for details.
