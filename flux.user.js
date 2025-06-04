@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Flux Client
 // @namespace    none
-// @version      15.0
+// @version      15.1
 // @description  A lightweight, customizable script designed to enhance the user experience in browser-based applications. It provides modular functionality with user-controlled toggles. Each feature is integrated through keyboard shortcuts for fast activation, and the script maintains a clean interface while offering power-user utilities.
 // @author       barryjensen-dev
 // @match        *://*/*
@@ -431,9 +431,9 @@
                         <div class="flux-card-title">About</div>
                         <div class="flux-about-info">
                             <p class="credits" style="font-size: 1.2em; color: var(--flux-accent);">Flux Client</p>
-                            <p class="version">Version: V15.1</p> <!-- Increment version -->
+                            <p class="version">Version: <span style="color: var(--flux-text-bright); font-weight:bold;">15.1</span></p>
                             <p>Developed by: <span style="color: var(--flux-text-bright); font-weight:bold;">barryjensen-dev</span></p>
-                            <p>Updated <span style="color: var(--flux-text-bright); font-weight:bold;">June 4, 2025</span></p>
+                            <p>Updated: <span style="color: var(--flux-text-bright); font-weight:bold;">June 4, 2025</span></p>
                         </div>
                     </div>
                     <div class="flux-card">
