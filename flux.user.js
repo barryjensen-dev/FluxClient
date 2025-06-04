@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Flux Client
-// @namespace    none
+// @namespace    https://github.com/barryjensen-dev/fluxclient
 // @version      15.1
 // @description  A lightweight, customizable script designed to enhance the user experience in browser-based applications. It provides modular functionality with user-controlled toggles. Each feature is integrated through keyboard shortcuts for fast activation, and the script maintains a clean interface while offering power-user utilities.
 // @author       barryjensen-dev
@@ -88,7 +88,8 @@
 // @exclude      *://webkit.org/*
 // @exclude      *://www.webkit.org/*
 // @icon         https://raw.githubusercontent.com/barryjensen-dev/fluxclient/refs/heads/main/icons/icon.png
-// @grant        none
+// @grant        GM_setClipboard
+// @grant        GM_setValue
 // @downloadURL  https://github.com/barryjensen-dev/fluxclient/raw/refs/heads/main/flux.user.js
 // @updateURL    https://github.com/barryjensen-dev/fluxclient/raw/refs/heads/main/flux.user.js
 // ==/UserScript==
